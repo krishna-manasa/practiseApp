@@ -1,0 +1,9 @@
+<p>login works!
+  <br>
+Value from the parent :: {{childVar}}
+  <br>
+  Child Value :: {{testOne}}
+  <br>
+  <input [(ngModel)]="testOne" (ngModelChange)="chageChildValue($event)">
+  <button (click)="redirectToHome($event)">Go To Home</button>
+</p>

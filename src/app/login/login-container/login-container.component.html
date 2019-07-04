@@ -1,0 +1,10 @@
+<p>login-container works!
+  <br>
+  <input (ngModelChange)="changeTagValue($event)" [(ngModel)]="test">
+  <br>
+  Parent value: {{test}}
+  <br>
+  From Child value :{{childVariableValue}}
+</p>
+
+<app-login [childVar]="test" (sendToParent)="changeTagValues($event)"></app-login>
